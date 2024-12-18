@@ -1,2 +1,45 @@
-.btn-next {    background-color: #000;
-    color: white;}
+* {    
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+.container {  
+    /* flex-direction: column; */
+        text-align: center;
+        background: #ECF0F1;
+        width: 400px;
+        height: 300px;
+        padding: 50px;
+        justify-content: center;
+
+    
+}
+ .btn-container {
+    display: flex;
+    justify-content: center;
+ }
+
+.title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.example {
+    margin-bottom: 15px;
+}
+
+.under {
+    font-size: 15px;
+}
+
+.btn-next {    background-color: blue;
+    color: white;
+    margin: 10px;
+    border-radius: 10%;
+    padding: 10px;
+}
+.btn-past {
+    background-color: green;
+    color: white;
+    border-radius: 10%;
+}    
