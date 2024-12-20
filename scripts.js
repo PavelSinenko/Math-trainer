@@ -1,65 +1,46 @@
-// Задание 1.1 
-// No.1 Дано число. Проверьте, отрицательное оно или нет. Выведите об этом информацию в консоль.
+// Задание 1.2
+// No.1 Дано число. Выведите в консоль первую цифру этого числа.
 const figure = (number) => {
-    console.log(number);
-    if (number > 0) {
-        console.log('Positive number');
-    } else if (number < 0) {
-        console.log('Negative number');
-    } else {
-        console.log('This is zero');
-    }
+    console.log(`First number: ${number.toString()[0]}`);
 }
-figure(-35);
+figure(384);
 
-// No.2 Дана строка. Выведите в консоль длину этой строки.
-//  const text = (string) => {
-//      console.log (string.length);
-//  }
-//  text('Justice and wisdom');
-
-//No.3 Дана строка. Выведите в консоль последний символ строки.
-// const text = (string) => {
-//     console.log(`Last symbol: ${string[string.length - 1]}`);
-// }
-// text("Kiwi");
-
-//No.4 Дано число. Проверьте, четное оно или нет.
+//No.2 Дано число. Выведите в консоль последнюю цифру этого числа.
 // const figure = (number) => {
-//    console.log(number);
-//    if (number % 2 === 0) {
-//     console.log('Четное число');
-//    } else {
-//     console.log('Нечетное число');
-//    }
-// }
-// figure(12);
+//     console.log(`Last number: ${number % 10}`);
+//     }
+//     figure(4643);
 
-//No.5 Даны два слова. Проверьте, что первые буквы этих слов совпадают.
-// const check = (word1, word2) => {
-//     console.log(word1, word2);
-//     if(word1[0].toLowerCase() === word2[0].toLowerCase()) {
-//         console.log('First letters are the same');
+// //No.3 Дано число. Выведите в консоль сумму первой и последней цифры этого числа.
+// const sumOfNumbers = (number) => {
+//     let figure = number.toString();
+//     let first = parseInt(figure[0]); 
+//     let last = parseInt(figure[figure.length - 1]);
+
+// console.log(`Our sum: ${first + last}`); 
+// }
+// sumOfNumbers(57899);
+
+//No.4 Дано число. Выведите количество цифр в этом числе.
+// const count = (number) => {
+//    let figure = number.toString().length;
+//    console.log(`Count of numbers: ${figure}`);
+// }
+// count(567386789);
+
+//No.5 Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
+// const sameNumbers = (number1, number2) => {
+//     console.log(number1, number2);
+//     let first = number1.toString();
+//     let second = number2.toString();
+//     if(first[0] === second[0]) {
+//         console.log('First numbers are the same');
 //     } else {
-//         console.log('No, first letters are differnet')
+//         console.log('No, first numbers are differnet')
 //     }
 
 // }
-// check('You', 'yougurt');
-
-//No.6 Последний: Дано слово. Получите его последнюю букву. Если слово заканчивается на мягкий знак, то получите предпоследнюю букву.
-// const checkWord = (word) => {
-//     console.log(word);
-//     if (word[word.length - 1] === 'ь') {
-//         console.log('Предпоследняя буква: ' + word[word.length - 2]);
-//     } else {
-//         console.log('Последняя буква: ' + word[word.length - 1]);
-//     }
-
-// }
-// checkWord('Камень');
-
-
+// sameNumbers(544, 58);
 
 
 // Предыдущие функции
