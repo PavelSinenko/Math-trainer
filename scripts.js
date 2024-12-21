@@ -1,26 +1,62 @@
-// Задание 1.3
-// No.1 Дана строка. Если в этой строке более одного символа, выведите в консоль предпоследний символ этой строки.
-// const predLast = (string) => {
-//     console.log(string);
-//     if (string.length > 1) {
-//         console.log(`Предпоследний символ: ${string[string.length - 2]}`);
-//     } else {
-//         console.log('Только один символ');
+// Задание 1.4
+// No.1 Выведите в консоль все целые числа от 1 до 100.
+// const allNumbers = () => {
+//     let i = 1;
+//     while (i <= 100) {
+//         console.log(i);
+//         i = i + 1;
 //     }
+//     console.log('All numbers from 1 to 100')
 // }
-// predLast('Hello world!');
+// allNumbers();
 
-//No.2 Даны два целых числа. Проверьте, что первое число без остатка делится на второе.
-const justNumber = (number1, number2) => {
-      if (number1 % number2 === 0) {
-        console.log('Yeeeah!');
-      } else {
-        console.log('Oh, nooo!')
-      }
-}
-justNumber(33, 3);
+//No.2 Выведите в консоль все целые числа от -100 до 0.
+// const allNumbers = () => {
+//         let i = -100;
+//         while (i <= 0) {
+//             console.log(i);
+//             i = i + 1;
+//         }
+//         console.log('All numbers from -100 to 0')
+//     }
+//     allNumbers();
 
+//No.3 Выведите в консоль все целые числа от 100 до 1.
+// const allNumbers = () => {
+//             let i = 100;
+//             while (i >= 1) {
+//                 console.log(i);
+//                 i = i - 1;
+//             }
+//             console.log('All numbers from 100 to 1')
+//         }
+//     allNumbers();
 
+//No.4 Выведите в консоль все четные числа из промежутка от 1 до 100.
+// const allEvenNumbers = () => {
+//             let i = 1;
+//             while (i <= 100) {
+//                 if(i % 2 === 0){
+//                 console.log(i);
+//                 } 
+//                 i = i + 1;
+//             }
+//             console.log('All even numbers from 1 to 100')
+//         }
+//         allEvenNumbers();
+
+//No.5 Выведите в консоль все числа кратные трем в промежутке от 1 до 100.
+const allNumbers = () => {
+            let i = 1;
+            while (i <= 100) {
+                if(i % 3 === 0){
+                console.log(i);
+                } 
+                i = i + 1;
+            }
+            console.log('Все числа в промежутке делящиеся на 3')
+        }
+        allNumbers();
 
 
 
