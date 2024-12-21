@@ -1,64 +1,50 @@
-// Задание 1.4
-// No.1 Выведите в консоль все целые числа от 1 до 100.
-// const allNumbers = () => {
-//     let i = 1;
-//     while (i <= 100) {
-//         console.log(i);
-//         i = i + 1;
-//     }
-//     console.log('All numbers from 1 to 100')
+// Задание 1.5
+// No.1 Найдите сумму всех целых чисел от 1 до 100.
+// const sumOfNumbers = () => {
+//     let sum = 0;
+//     for (let i = 1; i <= 100; i++) {
+//        sum = sum + i;
+//       }
+//       console.log(`${sum} This is sum`); 
 // }
-// allNumbers();
+// sumOfNumbers();
 
-//No.2 Выведите в консоль все целые числа от -100 до 0.
-// const allNumbers = () => {
-//         let i = -100;
-//         while (i <= 0) {
-//             console.log(i);
-//             i = i + 1;
-//         }
-//         console.log('All numbers from -100 to 0')
+//No.2 Найдите сумму всех целых четных чисел в промежутке от 1 до 100.
+// const sumOfNumbers = () => {
+//     let sum = 0;
+//     for (let i = 1; i <= 100; i++) {
+//         if (i % 2 === 0);{
+//           sum = sum + i; }
+//       }
+//       console.log(`${sum} This is sum`); 
+// }
+// sumOfNumbers();
+
+//No.3 Найдите сумму всех целых нечетных чисел в промежутке от 1 до 100.
+//    const sumOfNumbers = () => {
+//         let sum = 0;
+//         for (let i = 1; i <= 100; i++) {
+//             if (i % 2 !== 0);{
+//              sum = sum + i; }
+//           }
+//           console.log(`${sum} This is sum`); 
 //     }
-//     allNumbers();
+//     sumOfNumbers();
 
-//No.3 Выведите в консоль все целые числа от 100 до 1.
-// const allNumbers = () => {
-//             let i = 100;
-//             while (i >= 1) {
-//                 console.log(i);
-//                 i = i - 1;
-//             }
-//             console.log('All numbers from 100 to 1')
-//         }
-//     allNumbers();
+//No.4 Даны два целых числа. Найдите остаток от деления первого числа на второе.
+// const divideNumbers = (number1, number2) => {
+//     let differnce = number1 % number2;
+//     console.log(differnce)
+// }
+//    divideNumbers(35, 9);   
 
-//No.4 Выведите в консоль все четные числа из промежутка от 1 до 100.
-// const allEvenNumbers = () => {
-//             let i = 1;
-//             while (i <= 100) {
-//                 if(i % 2 === 0){
-//                 console.log(i);
-//                 } 
-//                 i = i + 1;
-//             }
-//             console.log('All even numbers from 1 to 100')
-//         }
-//         allEvenNumbers();
-
-//No.5 Выведите в консоль все числа кратные трем в промежутке от 1 до 100.
-const allNumbers = () => {
-            let i = 1;
-            while (i <= 100) {
-                if(i % 3 === 0){
-                console.log(i);
-                } 
-                i = i + 1;
-            }
-            console.log('Все числа в промежутке делящиеся на 3')
-        }
-        allNumbers();
-
-
+//No.5 Дана некоторая строка. Переберите и выведите в консоль по очереди все символы с конца строки.
+const ourString = (string) => {
+    for (let i = string.length -1; i>= 0; i--) {
+        console.log(string[i]);
+    }
+}
+ourString('Hello everyone!')
 
 
 
