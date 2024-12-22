@@ -1,51 +1,33 @@
-// Задание 1.5
-// No.1 Найдите сумму всех целых чисел от 1 до 100.
-// const sumOfNumbers = () => {
-//     let sum = 0;
-//     for (let i = 1; i <= 100; i++) {
-//        sum = sum + i;
-//       }
-//       console.log(`${sum} This is sum`); 
-// }
-// sumOfNumbers();
+// Задание 1.6
+//No.1 Дан массив с числами. Найдите сумму квадратов элементов этого массива.
+// const numbers = [2, 5, 3];
+// const quad = numbers.reduce((sum, num) => sum + num ** 2, 0);
+// console.log(quad); 
 
-//No.2 Найдите сумму всех целых четных чисел в промежутке от 1 до 100.
-// const sumOfNumbers = () => {
-//     let sum = 0;
-//     for (let i = 1; i <= 100; i++) {
-//         if (i % 2 === 0);{
-//           sum = sum + i; }
-//       }
-//       console.log(`${sum} This is sum`); 
-// }
-// sumOfNumbers();
+//No.2 Дан массив с числами. Найдите сумму квадратных корней элементов этого массива.
+// const numbers = [4, 9, 16];
+// const answer = numbers.reduce((sum, num) => sum + Math.sqrt(num), 0);
+// console.log(answer); 
 
-//No.3 Найдите сумму всех целых нечетных чисел в промежутке от 1 до 100.
-//    const sumOfNumbers = () => {
-//         let sum = 0;
-//         for (let i = 1; i <= 100; i++) {
-//             if (i % 2 !== 0);{
-//              sum = sum + i; }
-//           }
-//           console.log(`${sum} This is sum`); 
+// //No.3 Дан массив с числами. Найдите сумму положительных элементов этого массива.
+// const numbers = [-4, 10, 15, -44];
+// const answer = numbers.reduce((sum, num) => {
+//     if (num > 0) {
+//       sum = sum + num; 
 //     }
-//     sumOfNumbers();
+//     return sum; 
+//   }, 0);
+// console.log(answer);
 
-//No.4 Даны два целых числа. Найдите остаток от деления первого числа на второе.
-// const divideNumbers = (number1, number2) => {
-//     let differnce = number1 % number2;
-//     console.log(differnce)
-// }
-//    divideNumbers(35, 9);   
-
-//No.5 Дана некоторая строка. Переберите и выведите в консоль по очереди все символы с конца строки.
-const ourString = (string) => {
-    for (let i = string.length -1; i>= 0; i--) {
-        console.log(string[i]);
+//No.4 Дан массив с числами. Найдите сумму тех элементов этого массива, которые больше нуля и меньше десяти.
+const numbers = [-4, 10, 4, 7, 3, 55];
+const answer = numbers.reduce((sum, num) => {
+    if (num > 0 && num < 10) {
+      sum = sum + num; 
     }
-}
-ourString('Hello everyone!')
-
+    return sum; 
+  }, 0);
+console.log(answer);
 
 
 // Предыдущие функции
