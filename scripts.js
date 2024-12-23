@@ -1,24 +1,28 @@
-// Задание 1.7
-//No.1 Дана строка: 'abcde' Получите массив букв этой строки.
-// const str = 'abcde';
-// const mass = str.split('');
-// console.log(mass); // Выводит [ 'a', 'b', 'c', 'd', 'e' ]
+// Задание 1.8
+//No.1 Заполните массив целыми числами от 1 до 10.
+// const mass = [];
+// for (let i = 1; i <= 10; i++) {
+//     mass.push(i);
+// }
+// console.log(mass); // Выводит массив [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
-//No.2 Дано некоторое число: '12345' Получите массив цифр этого числа.
-// const number = 12345;
-// const mass = number.toString().split('').map(Number);
-// console.log(mass); // Выводит [ 1, 2, 3, 4, 5 ]
+//No.2 Заполните массив четными числами из промежутка от 1 до 100.
+// const mass = [];
+// for (let i = 1; i <= 100; i++) {
+//    if(i % 2 === 0) {
+//     mass.push(i);
+//    }
+// }
+// console.log(mass); // Выводит большой массив из четных чисел
 
-//No.3 Дано некоторое число: '12345' Переверните его: '54321'
-// const number = 12345;
-// const i = number.toString().split('').reverse().join('');
-// const reverseNumber = parseInt(i)
-// console.log(reverseNumber); // Выводит 54321
+//No.3 Дан массив с дробями: [1.456, 2.125, 3.32, 4.1, 5.34] Округлите эти дроби до одного знака в дробной части.
+const mass = [1.456, 2.125, 3.32, 4.1, 5.34];
+const otherMassive = mass.reduce((res, num) => {
+    res.push(Math.round(num * 10) / 10);
+    return res;
+    }, []);
 
-//No.4 Дано некоторое число: '12345'  Найдите сумму цифр этого числа.
-const number = 12345;
-const sumOfDigits = number.toString().split('').map(Number).reduce((sum, num) => sum + num, 0);
-console.log(sumOfDigits); // Выводит 15
+console.log(otherMassive); // Выводит: [ 1.5, 2.1, 3.3, 4.1, 5.3 ]
 
 
 
