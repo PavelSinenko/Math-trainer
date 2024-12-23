@@ -1,33 +1,25 @@
-// Задание 1.6
-//No.1 Дан массив с числами. Найдите сумму квадратов элементов этого массива.
-// const numbers = [2, 5, 3];
-// const quad = numbers.reduce((sum, num) => sum + num ** 2, 0);
-// console.log(quad); 
+// Задание 1.7
+//No.1 Дана строка: 'abcde' Получите массив букв этой строки.
+// const str = 'abcde';
+// const mass = str.split('');
+// console.log(mass); // Выводит [ 'a', 'b', 'c', 'd', 'e' ]
 
-//No.2 Дан массив с числами. Найдите сумму квадратных корней элементов этого массива.
-// const numbers = [4, 9, 16];
-// const answer = numbers.reduce((sum, num) => sum + Math.sqrt(num), 0);
-// console.log(answer); 
+//No.2 Дано некоторое число: '12345' Получите массив цифр этого числа.
+// const number = 12345;
+// const mass = number.toString().split('').map(Number);
+// console.log(mass); // Выводит [ 1, 2, 3, 4, 5 ]
 
-// //No.3 Дан массив с числами. Найдите сумму положительных элементов этого массива.
-// const numbers = [-4, 10, 15, -44];
-// const answer = numbers.reduce((sum, num) => {
-//     if (num > 0) {
-//       sum = sum + num; 
-//     }
-//     return sum; 
-//   }, 0);
-// console.log(answer);
+//No.3 Дано некоторое число: '12345' Переверните его: '54321'
+// const number = 12345;
+// const i = number.toString().split('').reverse().join('');
+// const reverseNumber = parseInt(i)
+// console.log(reverseNumber); // Выводит 54321
 
-//No.4 Дан массив с числами. Найдите сумму тех элементов этого массива, которые больше нуля и меньше десяти.
-const numbers = [-4, 10, 4, 7, 3, 55];
-const answer = numbers.reduce((sum, num) => {
-    if (num > 0 && num < 10) {
-      sum = sum + num; 
-    }
-    return sum; 
-  }, 0);
-console.log(answer);
+//No.4 Дано некоторое число: '12345'  Найдите сумму цифр этого числа.
+const number = 12345;
+const sumOfDigits = number.toString().split('').map(Number).reduce((sum, num) => sum + num, 0);
+console.log(sumOfDigits); // Выводит 15
+
 
 
 // Предыдущие функции
