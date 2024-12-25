@@ -6,18 +6,19 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="title">Math trainer</h1>
-    <p id="answer" class="example">Future example</p>
-    <input type="text">
-    <div class="btn-container">
-     <button class="btn-next">Check</button>
-     <button id="next" class="btn-past">Next example</button>
-    </div>
-     <div class="under">
-        <p>Right answers</p>
-        <p>All answers</p>
-      </div>
-    </div>
+     <h1 class="title">Math trainer</h1>
+     <div class="example" id="example"></div>
+     <input type="number" class="input" id="input">
+     <div class="button-container">
+        <button class="btn-check">Check</button>
+        <button class="btn-next">Next example</button>
+     </div>
+     <div id="result" class="result"></div>
+     <div class="stats">
+        <p class="stats-parts">Right answers: <span id="correct" class="stats-count">0</span></p>
+        <p class="stats-parts">All answers: <span id="total" class="stats-count">0</span></p>
+     </div>
+  </div>
 
     <script src="scripts.js"></script>
 </body>
