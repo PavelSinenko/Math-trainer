@@ -1,8 +1,4 @@
-// Сделал генерацию примера и его отображение
-// Исправил html и css, теперь панель стоит по центру  :)
-
-
-// Функция к которой все могут обратиться
+// Функция к которой все обращаются
 let currentMoment = {};
 
 let stats = {
@@ -36,18 +32,47 @@ function displayResult() {
 
 }
 
-// Оказывается, чтобы выводился пример, надо добавить event ¯\_(ツ)_/¯
+// Вывод примера при обновлении страницы
 document.addEventListener('DOMContentLoaded', function() {
     displayResult();
-});
+});  
+
+
+// Проверка ответа пользователя
+function checkAnswer() {
+    const userAnswer = parseInt(document.getElementById('input').value);
+    const resultOfAnswer = document.getElementById('result');
+
+    if(isNaN(userAnswer)) {
+        resultOfAnswer.textContent = 'Input a number';
+        resultOfAnswer.style.color = 'red';
+        return;
+    }
+
+    stats.total++;
+    if(userAnswer === currentMoment.answer) {
+        resultOfAnswer.textContent = 'This is right! Well done!';
+        resultOfAnswer.style.color = 'green';
+        stats.correct++;
+    } else {
+        resultOfAnswer.textContent = 'This is wrong! Try again';
+        resultOfAnswer.style.color = 'red';
+    }
+
+    changeStats();
+}
+
+
+// Обновление статистики
+function changeStats() {
+    document.getElementById('total').textContent = stats.total;
+    document.getElementById('correct').textContent = stats.correct;
+}
+
+// Переход к следующему примеру
+function nextExample() {
+    displayResult();
+}
 
 
 
-
-// Осталось от предыдущих функций, пусть будет
-// document.addEventListener('DOMContentLoaded',function(){test()})
-// document.addEventListener('keypress', function(ev){
-//     if( === 'Enter'){
-//         document.getElementById('answer').textContent='33 - 22 = ?';
-//     }
-// })
