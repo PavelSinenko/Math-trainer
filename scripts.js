@@ -1,5 +1,6 @@
-// Функция к которой все обращаются
+// Переменная к которой все обращаются
 let currentMoment = {};
+
 
 let stats = {
     correct: 0,
@@ -73,6 +74,5 @@ function changeStats() {
 function nextExample() {
     displayResult();
 }
-
 
 
