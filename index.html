@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+    <link rel="stylesheet" href="styles.css">   
+    <meta charset="UTF-8">
+</head>
+<body>
+  <div class="container">
+     <h1 class="title">Math trainer</h1>
+     <div class="example" id="example"></div>
+     <input type="number" class="input" id="input">
+     <div class="button-container">
+        <button class="btn-check" onclick="checkAnswer()">Check</button>
+        <button class="btn-next" onclick="nextExample()">Next example</button>
+     </div>
+     <div id="result" class="result"></div>
+     <div class="stats">
+        <p class="stats-parts">Right answers: <span id="correct" class="stats-count">0</span></p>
+        <p class="stats-parts">All answers: <span id="total" class="stats-count">0</span></p>
+     </div>
+  </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
